@@ -52,18 +52,13 @@ public class SalleHeader {
 		String originalWindowHandle = driver.getWindowHandle();
 		for (String handle : driver.getWindowHandles()) {
 			driver.switchTo().window(handle);
-			System.out.println("current handle is: " + handle);
 			String url = driver.getCurrentUrl();
-	        System.out.println("current url is: " + url);  
 		}
-		
-//		a.validationNuevoTitle(driver);	
 		
 		a.ValidaUrl(driver);
 		
 		driver.switchTo().window(originalWindowHandle);
 		String url = driver.getCurrentUrl();
-		System.out.println("current url is: " + url);
 	}
 
 }
