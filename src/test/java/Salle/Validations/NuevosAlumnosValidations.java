@@ -2,6 +2,8 @@ package Salle.Validations;
 
 import org.openqa.selenium.WebDriver;
 
+import Salle.Reporters.Esenciales;
+import Salle.Salle.AlumnosReferences;
 import Salle.Salle.NuevosAlumnosReferences;
 
 public class NuevosAlumnosValidations {
@@ -16,4 +18,6 @@ public class NuevosAlumnosValidations {
 			System.out.println(e);
 		}
 	}
+	
+	
 }

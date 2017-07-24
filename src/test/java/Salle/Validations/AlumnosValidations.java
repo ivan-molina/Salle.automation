@@ -2,6 +2,7 @@ package Salle.Validations;
 
 import org.openqa.selenium.WebDriver;
 
+import Salle.Reporters.Esenciales;
 import Salle.Salle.AlumnosReferences;
 
 public class AlumnosValidations {
@@ -13,5 +14,11 @@ public class AlumnosValidations {
 		}catch(Exception e){
 			System.out.println(e);
 		}
+	}
+	
+	public void ValidaUrl (WebDriver driver) throws Exception{
+		Esenciales esen = new Esenciales();
+		AlumnosReferences aR = new AlumnosReferences(driver);
+		esen.ValidaUrl(driver, aR.getNuevoAlumnosUrl());
 	}
 }

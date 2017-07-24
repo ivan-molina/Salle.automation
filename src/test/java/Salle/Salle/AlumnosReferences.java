@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AlumnosReferences {
 	private WebDriver driver;
-	private String url = "http://estudy.salle.url.edu/?lang=es";
+	private String url = "https://estudy.salle.url.edu/?lang=es";
 	private String xpath_estudy_title = "yui_3_17_2_1_1500116845433_145";
 	
 	public AlumnosReferences(WebDriver driver){
@@ -38,5 +38,9 @@ public class AlumnosReferences {
 			System.out.println(e);
 			System.out.println("Espera Nuevo Title: TEST KO");
 		}
+	}
+	
+	public String getNuevoAlumnosUrl () {
+		return url;
 	}
 }

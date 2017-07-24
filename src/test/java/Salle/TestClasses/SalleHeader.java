@@ -1,6 +1,7 @@
 package Salle.TestClasses;
 
 import java.io.File;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -17,12 +18,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
-import com.relevantcodes.extentreports.ReporterType;
-
+import Salle.Reporters.Esenciales;
 import Salle.Salle.HomeReferences;
+import Salle.Salle.NuevosAlumnosReferences;
 import Salle.Validations.AlumnosValidations;
 import Salle.Validations.NuevosAlumnosValidations;
 
@@ -31,6 +29,7 @@ public class SalleHeader {
 	private HomeReferences hr = new HomeReferences(driver);
 	private NuevosAlumnosValidations na =  new NuevosAlumnosValidations();
 	private AlumnosValidations a = new AlumnosValidations();
+	private Esenciales esen = new Esenciales();
 	
 	@AfterClass
 	public void DespuesHeader(){
@@ -40,16 +39,31 @@ public class SalleHeader {
 	public void AntesHeader(){
 		hr.getSalleUrl(driver);
 	}
-	@Test
+	@Test(priority = 1)
 	public void NuevosAlumnos() throws Exception{
 		hr.EsperaCargaPrincipal(driver);
 		hr.EntraNuevosAlumnos(driver);
 		na.validationNuevoTitle(driver); 
 	}
-	@Test
+	@Test(priority = 2)
 	public void Alumnos() throws Exception{
 		hr.EntraAlumnos(driver);
-		a.validationNuevoTitle(driver);		
+		
+		String originalWindowHandle = driver.getWindowHandle();
+		for (String handle : driver.getWindowHandles()) {
+			driver.switchTo().window(handle);
+			System.out.println("current handle is: " + handle);
+			String url = driver.getCurrentUrl();
+	        System.out.println("current url is: " + url);  
+		}
+		
+//		a.validationNuevoTitle(driver);	
+		
+		a.ValidaUrl(driver);
+		
+		driver.switchTo().window(originalWindowHandle);
+		String url = driver.getCurrentUrl();
+		System.out.println("current url is: " + url);
 	}
 
 }
