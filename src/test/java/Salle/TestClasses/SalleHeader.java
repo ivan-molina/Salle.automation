@@ -74,6 +74,7 @@ public class SalleHeader {
 	
 	@Test(priority = 4)
 	public void Empresas() throws Exception{
+		hr.EntraEmpresa(driver);
 		
 	}
 
