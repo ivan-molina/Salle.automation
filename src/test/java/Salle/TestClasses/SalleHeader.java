@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
 import Salle.Reporters.Esenciales;
 import Salle.Salle.HomeReferences;
 import Salle.Salle.NuevosAlumnosReferences;
+import Salle.Validations.AlumniValidations;
 import Salle.Validations.AlumnosValidations;
 import Salle.Validations.NuevosAlumnosValidations;
 
@@ -29,6 +30,7 @@ public class SalleHeader {
 	private HomeReferences hr = new HomeReferences(driver);
 	private NuevosAlumnosValidations na =  new NuevosAlumnosValidations();
 	private AlumnosValidations a = new AlumnosValidations();
+	private AlumniValidations ali = new AlumniValidations();
 	private Esenciales esen = new Esenciales();
 	
 	@AfterClass
@@ -48,17 +50,31 @@ public class SalleHeader {
 	@Test(priority = 2)
 	public void Alumnos() throws Exception{
 		hr.EntraAlumnos(driver);
-		
+		//Guardamos el handle del driver de la pantalla principal
 		String originalWindowHandle = driver.getWindowHandle();
-		for (String handle : driver.getWindowHandles()) {
-			driver.switchTo().window(handle);
-			String url = driver.getCurrentUrl();
-		}
+		//Verificamos el handle posicionado en la nueva pestaña
+		esen.cambiaPestaña(driver);
 		
 		a.ValidaUrl(driver);
-		
+		//Volvemos a la Pestaña principal de la prueba (HOME)
 		driver.switchTo().window(originalWindowHandle);
-		String url = driver.getCurrentUrl();
+	}
+	@Test(priority = 3)
+	public void Alumni() throws Exception{
+		hr.EntraAlumni(driver);
+		//Guardamos el handle del driver de la pantalla principal
+		String originalWindowHandle = driver.getWindowHandle();
+		//Verificamos el handle posicionado en la nueva pestaña
+		esen.cambiaPestaña(driver);
+		
+		ali.ValidaUrl(driver);
+		//Volvemos a la Pestaña principal de la prueba (HOME)
+		driver.switchTo().window(originalWindowHandle);
+	}
+	
+	@Test(priority = 4)
+	public void Empresas() throws Exception{
+		
 	}
 
 }

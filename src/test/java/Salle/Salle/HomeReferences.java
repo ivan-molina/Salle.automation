@@ -15,6 +15,7 @@ public class HomeReferences {
 	private String xpath_principal_header_NuevosAlumnos = "//li[@class[contains(.,'first collapsed')]]";
 	private String id_principal_logoSalle = "logo";
 	private String xpath_principal_header_Alumnos = ".//*[@id='block-menu-features']/div/ul/li[2]/a";
+	private String cs_Alumni_header = "#block-menu-features > div > ul > li:nth-child(3) > a";
 	
 	public HomeReferences(WebDriver driver){
 		this.driver = driver;
@@ -54,6 +55,17 @@ public class HomeReferences {
 		}catch(Exception e){
 			System.out.println(e);
 			System.out.println("Header Alumnos click: TEST KO");
+		}
+	}
+	
+	public void EntraAlumni (WebDriver driver) throws Exception{
+		try{
+			driver.findElement(By.cssSelector(cs_Alumni_header))
+			.click();
+			System.out.println("Header Alumni click: TEST OK");
+		}catch(Exception e){
+			System.out.println(e);
+			System.out.println("Header Alumni click: TEST KO");
 		}
 	}
 	//("//span[@class[contains(.,'cambiarDatosEnvio')]]"))

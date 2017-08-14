@@ -8,4 +8,11 @@ public class Esenciales {
 		String urltocompare = driver.getCurrentUrl();
 		Assert.assertEquals(url, urltocompare);
 	}
+	
+	public void cambiaPestaña(WebDriver driver) {
+		for (String handle : driver.getWindowHandles()) {
+			driver.switchTo().window(handle);
+			String url = driver.getCurrentUrl();
+		}
+	}
 }

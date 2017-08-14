@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ivanm\AppData\Local\Temp\testng-eclipse--1368586457\testng-customsuite.xml</span>
+                    <span>C:\Users\im.saptest\AppData\Local\Temp\testng-eclipse--711507134\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Salle.TestClasses.SalleHeader" hash-for-method="Alumni">Alumni</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Salle.TestClasses.SalleHeader" hash-for-method="Alumnos">Alumnos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Salle.TestClasses.SalleHeader" hash-for-method="Empresas">Empresas</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,9 +139,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="Alumni">
+                  </a> <!-- Alumni -->
+                  <span class="method-name">Alumni</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Alumnos">
                   </a> <!-- Alumnos -->
                   <span class="method-name">Alumnos</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Empresas">
+                  </a> <!-- Empresas -->
+                  <span class="method-name">Empresas</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -146,7 +170,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ivanm\AppData\Local\Temp\testng-eclipse--1368586457\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\im.saptest\AppData\Local\Temp\testng-eclipse--711507134\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -195,20 +219,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Alumnos')
+data.setCell(0, 1, 'Alumni')
 data.setCell(0, 2, 'Salle.TestClasses.SalleHeader')
-data.setCell(0, 3, 1864);
+data.setCell(0, 3, 2640);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'NuevosAlumnos')
+data.setCell(1, 1, 'Alumnos')
 data.setCell(1, 2, 'Salle.TestClasses.SalleHeader')
-data.setCell(1, 3, 1652);
+data.setCell(1, 3, 1462);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'NuevosAlumnos')
+data.setCell(2, 2, 'Salle.TestClasses.SalleHeader')
+data.setCell(2, 3, 935);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Empresas')
+data.setCell(3, 2, 'Salle.TestClasses.SalleHeader')
+data.setCell(3, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -241,15 +273,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">NuevosAlumnos</span>
-                <span class="method-start">10324 ms</span>
+                <span class="method-start">6765 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Alumnos</span>
-                <span class="method-start">11979 ms</span>
+                <span class="method-start">7703 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Alumni</span>
+                <span class="method-start">9165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Empresas</span>
+                <span class="method-start">11806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">DespuesHeader</span>
-                <span class="method-start">13846 ms</span>
+                <span class="method-start">11808 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
