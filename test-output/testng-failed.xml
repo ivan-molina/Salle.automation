@@ -7,7 +7,9 @@
         <methods>
           <include name="Alumni"/>
           <include name="AntesHeader"/>
+          <include name="Alumnos"/>
           <include name="DespuesHeader"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- Salle.TestClasses.SalleHeader -->
     </classes>

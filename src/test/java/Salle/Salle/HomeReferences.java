@@ -6,20 +6,33 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomeReferences {
-	private WebDriver driver;
-	private String url = "http://www.salleurl.edu/es";
-	private String xpath_principal_header_NuevosAlumnos = "//li[@class[contains(.,'first collapsed')]]";
-	private String id_principal_logoSalle = "logo";
-	private String xpath_principal_header_Alumnos = ".//*[@id='block-menu-features']/div/ul/li[2]/a";
-	private String cs_Alumni_header = "#block-menu-features > div > ul > li:nth-child(3) > a";
-	private String cs_Empresas_header = "#block-menu-features > div > ul > li:nth-child(4) > a";
 	
+	private String url = "http://www.salleurl.edu/es";
+	public WebDriver driver; 
+	
+	@FindBy(xpath = "//li[@class[contains(.,'first collapsed')]]")
+	private WebElement xpath_principal_header_NuevosAlumnos;
+	
+	@FindBy(id = "logo")
+	private WebElement id_principal_logoSalle;
+	
+	@FindBy(xpath = ".//*[@id='block-menu-features']/div/ul/li[2]/a")
+	private WebElement xpath_principal_header_Alumnos;
+	
+	@FindBy(css = "#block-menu-features > div > ul > li:nth-child(3) > a")
+	private WebElement cs_Alumni_header;
+	
+	@FindBy(css = "#block-menu-features > div > ul > li:nth-child(4) > a")
+	private WebElement cs_Empresas_header;
+		
 	public HomeReferences(WebDriver driver){
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void getSalleUrl(WebDriver driver){
@@ -29,7 +42,7 @@ public class HomeReferences {
 	public void EsperaCargaPrincipal(WebDriver driver) throws Exception{
 		try{
 			WebDriverWait wait = new WebDriverWait(driver, 10);
-			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id_principal_logoSalle)));
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(id_principal_logoSalle));
 			System.out.println("Carga principal: TEST OK");
 		}catch(Exception e){
 			System.out.println(e);
@@ -39,8 +52,7 @@ public class HomeReferences {
 	
 	public void EntraNuevosAlumnos(WebDriver driver) throws Exception{
 		try{
-			driver.findElement(By.xpath(xpath_principal_header_NuevosAlumnos))
-			.click();
+			xpath_principal_header_NuevosAlumnos.click();
 			System.out.println("Header Nuevos Alumnos click: TEST OK");
 		}catch(Exception e){
 			System.out.println(e);
@@ -50,8 +62,7 @@ public class HomeReferences {
 	
 	public void EntraAlumnos (WebDriver driver) throws Exception{
 		try{
-			driver.findElement(By.xpath(xpath_principal_header_Alumnos))
-			.click();
+			xpath_principal_header_Alumnos.click();
 			System.out.println("Header Alumnos click: TEST OK");
 		}catch(Exception e){
 			System.out.println(e);
@@ -61,8 +72,7 @@ public class HomeReferences {
 	
 	public void EntraAlumni (WebDriver driver) throws Exception{
 		try{
-			driver.findElement(By.cssSelector(cs_Alumni_header))
-			.click();
+			cs_Alumni_header.click();
 			System.out.println("Header Alumni click: TEST OK");
 		}catch(Exception e){
 			System.out.println(e);
@@ -72,27 +82,11 @@ public class HomeReferences {
 	
 	public void EntraEmpresa (WebDriver driver) throws Exception{
 		try{
-			driver.findElement(By.cssSelector(cs_Empresas_header))
-			.click();
+			cs_Empresas_header.click();
 			System.out.println("Header Empresa click: TEST OK");
 		}catch(Exception e){
 			System.out.println(e);
 			System.out.println("Header Empresa click: TEST KO");
 		}
 	}
-	//("//span[@class[contains(.,'cambiarDatosEnvio')]]"))
-	/* @FindBy(how = How.XPATH, using = "//li[@class[contains(.,'first collapsed')]]")
-	 public static WebElement nuevos_alumnos;
-
-	 @FindBy(how = How.ID, using = "logo")
-	 public static WebElement logo_salle;
-
-	 @FindBy(how = How.ID, using = "pwd")
-	 public static WebElement txtbx_Password;
-
-	 @FindBy(how = How.NAME, using = "submit")
-	 public static WebElement btn_Login ;
-
-	 @FindBy(how = How.XPATH, using = ".//*[@id='account_logout']/a")
-	 public static WebElement lnk_LogOut;*/
 }

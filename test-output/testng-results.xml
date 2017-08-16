@@ -2,35 +2,79 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13176" started-at="2017-08-14T14:06:44Z" finished-at="2017-08-14T14:06:57Z">
+  <suite name="Default suite" duration-ms="10644" started-at="2017-08-16T14:06:38Z" finished-at="2017-08-16T14:06:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13176" started-at="2017-08-14T14:06:44Z" finished-at="2017-08-14T14:06:57Z">
+    <test name="Default test" duration-ms="10644" started-at="2017-08-16T14:06:38Z" finished-at="2017-08-16T14:06:48Z">
       <class name="Salle.TestClasses.SalleHeader">
-        <test-method status="PASS" signature="AntesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@5824a83d]" name="AntesHeader" is-config="true" duration-ms="5859" started-at="2017-08-14T16:06:44Z" finished-at="2017-08-14T16:06:50Z">
+        <test-method status="PASS" signature="AntesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="AntesHeader" is-config="true" duration-ms="4363" started-at="2017-08-16T16:06:38Z" finished-at="2017-08-16T16:06:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AntesHeader -->
-        <test-method status="PASS" signature="NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@5824a83d]" name="NuevosAlumnos" duration-ms="2333" started-at="2017-08-14T16:06:50Z" finished-at="2017-08-14T16:06:52Z">
+        <test-method status="PASS" signature="NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="NuevosAlumnos" duration-ms="1369" started-at="2017-08-16T16:06:42Z" finished-at="2017-08-16T16:06:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NuevosAlumnos -->
-        <test-method status="PASS" signature="Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@5824a83d]" name="Alumnos" duration-ms="1468" started-at="2017-08-14T16:06:52Z" finished-at="2017-08-14T16:06:54Z">
+        <test-method status="PASS" signature="Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Alumnos" duration-ms="1766" started-at="2017-08-16T16:06:43Z" finished-at="2017-08-16T16:06:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alumnos -->
-        <test-method status="PASS" signature="Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@5824a83d]" name="Alumni" duration-ms="2091" started-at="2017-08-14T16:06:54Z" finished-at="2017-08-14T16:06:56Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-16T16:06:43Z" finished-at="2017-08-16T16:06:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NuevosAlumnos status=SUCCESS method=SalleHeader.NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="2" started-at="2017-08-16T16:06:45Z" finished-at="2017-08-16T16:06:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Alumnos status=SUCCESS method=SalleHeader.Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Alumni" duration-ms="1308" started-at="2017-08-16T16:06:45Z" finished-at="2017-08-16T16:06:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alumni -->
-        <test-method status="PASS" signature="Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@5824a83d]" name="Empresas" duration-ms="540" started-at="2017-08-14T16:06:56Z" finished-at="2017-08-14T16:06:56Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-08-16T16:06:46Z" finished-at="2017-08-16T16:06:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Alumni status=SUCCESS method=SalleHeader.Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Empresas" duration-ms="866" started-at="2017-08-16T16:06:46Z" finished-at="2017-08-16T16:06:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Empresas -->
-        <test-method status="PASS" signature="DespuesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@5824a83d]" name="DespuesHeader" is-config="true" duration-ms="879" started-at="2017-08-14T16:06:56Z" finished-at="2017-08-14T16:06:57Z">
+        <test-method status="PASS" signature="DespuesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="DespuesHeader" is-config="true" duration-ms="949" started-at="2017-08-16T16:06:47Z" finished-at="2017-08-16T16:06:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DespuesHeader -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-16T16:06:47Z" finished-at="2017-08-16T16:06:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Empresas status=SUCCESS method=SalleHeader.Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Salle.TestClasses.SalleHeader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
