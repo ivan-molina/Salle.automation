@@ -2,25 +2,28 @@ package Salle.Salle;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class EmpresasReferences {
 	private WebDriver driver;
 	private String url;
-	private String class_empresas_imagen = "img-container";
+	
+	@FindBy(className = "img-container")
+	private WebElement class_empresas_imagen;
 	
 	public EmpresasReferences(WebDriver driver){
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
+	
 	public void getEmpresasUrl(WebDriver driver){
 		driver.get(url);
 	}
-	public void EstudyTitle(WebDriver driver) throws Exception{
-		try{
-			driver.findElement(By.className(class_empresas_imagen));
-			System.out.println("Encuentra Nuevo Title: TEST OK");
-		}catch(Exception e){
-			System.out.println(e);
-			System.out.println("Encuentra Nuevo Title: TEST KO");
-		}		
+	
+	public WebElement getEmpresas_imagen() {
+		return class_empresas_imagen;
 	}
+	
 }

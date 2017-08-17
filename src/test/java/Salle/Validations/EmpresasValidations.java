@@ -1,19 +1,26 @@
 package Salle.Validations;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import Salle.Reporters.Esenciales;
 import Salle.Salle.AlumnosReferences;
 import Salle.Salle.EmpresasReferences;
 
 public class EmpresasValidations {
-	public void validationEmpresasTitle(WebDriver driver) throws Exception{
+	
+	WebDriver driver;
+	EmpresasReferences eR;
+	
+	public void EstudyTitle(WebDriver driver) throws Exception{
 		try{
-			AlumnosReferences na = new AlumnosReferences(driver);
-			na.EsperaEstudyTitle(driver);
-			na.EstudyTitle(driver);
+			eR = new EmpresasReferences(driver);
+			driver.findElement((By) eR.getEmpresas_imagen());
+			System.out.println("Encuentra Nuevo Title: TEST OK");
 		}catch(Exception e){
 			System.out.println(e);
-		}
+			System.out.println("Encuentra Nuevo Title: TEST KO");
+		}		
 	}
 }

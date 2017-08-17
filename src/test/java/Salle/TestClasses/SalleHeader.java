@@ -97,7 +97,7 @@ public class SalleHeader {
 	@Test(priority = 4)
 	public void Empresas() throws Exception{
 		hv.EntraEmpresa(driver);
-		//Probamos el fallo para verificar screenshot
+		//Probamos el fallo para verificar que se genera el screenshot
 		Assert.assertEquals(1, 2);	
 	}
 

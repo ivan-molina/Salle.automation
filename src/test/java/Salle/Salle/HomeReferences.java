@@ -15,7 +15,10 @@ public class HomeReferences {
 	private String url = "http://www.salleurl.edu/es";
 	public WebDriver driver; 
 	
-	//Creamos nuestro Factory con todos los elementos que usaremos en la HOME
+	//************************************************************************
+	//Creamos nuestro Factory con todos los elementos que usaremos en la HOME*
+	//************************************************************************
+	
 	@FindBy(xpath = "//li[@class[contains(.,'first collapsed')]]")
 	private WebElement xpath_principal_header_NuevosAlumnos;
 	
@@ -31,13 +34,19 @@ public class HomeReferences {
 	@FindBy(css = "#block-menu-features > div > ul > li:nth-child(4) > a")
 	private WebElement cs_Empresas_header;
 	
-	//Instanciamos el constructor de la clase junto con el constructor del Factory
+	//*****************************************************************************
+	//Instanciamos el constructor de la clase junto con el constructor del Factory*
+	//*****************************************************************************
+	
 	public HomeReferences(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Implementamos los getters de los elementos
+	//*******************************************
+	//Implementamos los getters de los elementos*
+	//*******************************************
+	
 	public void getSalleUrl(WebDriver driver){
 		driver.get(url);
 	}
