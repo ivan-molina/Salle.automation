@@ -5,9 +5,8 @@
     <classes>
       <class name="Salle.TestClasses.SalleHeader">
         <methods>
-          <include name="Alumni"/>
           <include name="AntesHeader"/>
-          <include name="Alumnos"/>
+          <include name="Empresas"/>
           <include name="DespuesHeader"/>
           <include name="tearDown"/>
         </methods>

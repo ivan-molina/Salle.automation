@@ -1,5 +1,8 @@
 package Salle.TestClasses;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+
 import java.io.File;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -11,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
@@ -25,13 +29,15 @@ import Salle.Salle.HomeReferences;
 import Salle.Salle.NuevosAlumnosReferences;
 import Salle.Validations.AlumniValidations;
 import Salle.Validations.AlumnosValidations;
+import Salle.Validations.HomeValidations;
 import Salle.Validations.NuevosAlumnosValidations;
 
 public class SalleHeader {
 	private WebDriver driver = new ChromeDriver();
 	
 	private NuevosAlumnosValidations na =  new NuevosAlumnosValidations();
-	public HomeReferences hr  = new HomeReferences(driver);;
+	public HomeReferences hr  = new HomeReferences(driver);
+	private HomeValidations hv = new HomeValidations(driver);
 	private AlumnosValidations a = new AlumnosValidations();
 	private AlumniValidations ali = new AlumniValidations();
 	private Esenciales esen = new Esenciales();
@@ -42,10 +48,11 @@ public class SalleHeader {
 		driver.quit();
 	}
 	
+	//En caso de que el Test falle realizaremos un screenshot en el momento exacto del fallo
 	@AfterMethod
 	public void tearDown(ITestResult result){
 		if(ITestResult.FAILURE==result.getStatus()){
-			sc.captureScreenshot(driver, "Header");
+			sc.captureScreenshot(driver, "Header "+ Test.class.getSimpleName());
 		}
 	}
 	
@@ -56,14 +63,14 @@ public class SalleHeader {
 	
 	@Test(priority = 1)
 	public void NuevosAlumnos() throws Exception{
-		hr.EsperaCargaPrincipal(driver);
-		hr.EntraNuevosAlumnos(driver);
+		hv.EsperaCargaPrincipal(driver);
+		hv.EntraNuevosAlumnos(driver);
 		na.validationNuevoTitle(driver); 
 	}
 	
 	@Test(priority = 2)
 	public void Alumnos() throws Exception{
-		hr.EntraAlumnos(driver);
+		hv.EntraAlumnos(driver);
 		//Guardamos el handle del driver de la pantalla principal
 		String originalWindowHandle = driver.getWindowHandle();
 		//Verificamos el handle posicionado en la nueva pestaña
@@ -76,7 +83,7 @@ public class SalleHeader {
 	
 	@Test(priority = 3)
 	public void Alumni() throws Exception{
-		hr.EntraAlumni(driver);
+		hv.EntraAlumni(driver);
 		//Guardamos el handle del driver de la pantalla principal
 		String originalWindowHandle = driver.getWindowHandle();
 		//Verificamos el handle posicionado en la nueva pestaña
@@ -89,8 +96,9 @@ public class SalleHeader {
 	
 	@Test(priority = 4)
 	public void Empresas() throws Exception{
-		hr.EntraEmpresa(driver);
-		
+		hv.EntraEmpresa(driver);
+		//Probamos el fallo para verificar screenshot
+		Assert.assertEquals(1, 2);	
 	}
 
 }

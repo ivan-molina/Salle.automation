@@ -15,6 +15,7 @@ public class HomeReferences {
 	private String url = "http://www.salleurl.edu/es";
 	public WebDriver driver; 
 	
+	//Creamos nuestro Factory con todos los elementos que usaremos en la HOME
 	@FindBy(xpath = "//li[@class[contains(.,'first collapsed')]]")
 	private WebElement xpath_principal_header_NuevosAlumnos;
 	
@@ -29,64 +30,36 @@ public class HomeReferences {
 	
 	@FindBy(css = "#block-menu-features > div > ul > li:nth-child(4) > a")
 	private WebElement cs_Empresas_header;
-		
+	
+	//Instanciamos el constructor de la clase junto con el constructor del Factory
 	public HomeReferences(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Implementamos los getters de los elementos
 	public void getSalleUrl(WebDriver driver){
 		driver.get(url);
 	}
 	
-	public void EsperaCargaPrincipal(WebDriver driver) throws Exception{
-		try{
-			WebDriverWait wait = new WebDriverWait(driver, 10);
-			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(id_principal_logoSalle));
-			System.out.println("Carga principal: TEST OK");
-		}catch(Exception e){
-			System.out.println(e);
-			System.out.println("Carga principal: TEST KO");
-		}
+	public WebElement getHeader_NuevosAlumnos() {
+		return xpath_principal_header_NuevosAlumnos;
 	}
 	
-	public void EntraNuevosAlumnos(WebDriver driver) throws Exception{
-		try{
-			xpath_principal_header_NuevosAlumnos.click();
-			System.out.println("Header Nuevos Alumnos click: TEST OK");
-		}catch(Exception e){
-			System.out.println(e);
-			System.out.println("Header Nuevos Alumnos click: TEST KO");
-		}
+	public WebElement getHeader_LogoSalle() {
+		return id_principal_logoSalle;
 	}
 	
-	public void EntraAlumnos (WebDriver driver) throws Exception{
-		try{
-			xpath_principal_header_Alumnos.click();
-			System.out.println("Header Alumnos click: TEST OK");
-		}catch(Exception e){
-			System.out.println(e);
-			System.out.println("Header Alumnos click: TEST KO");
-		}
+	public WebElement getHeader_Alumnos() {
+		return xpath_principal_header_Alumnos;
 	}
 	
-	public void EntraAlumni (WebDriver driver) throws Exception{
-		try{
-			cs_Alumni_header.click();
-			System.out.println("Header Alumni click: TEST OK");
-		}catch(Exception e){
-			System.out.println(e);
-			System.out.println("Header Alumni click: TEST KO");
-		}
+	public WebElement getHeader_Alumni() {
+		return cs_Alumni_header;
 	}
 	
-	public void EntraEmpresa (WebDriver driver) throws Exception{
-		try{
-			cs_Empresas_header.click();
-			System.out.println("Header Empresa click: TEST OK");
-		}catch(Exception e){
-			System.out.println(e);
-			System.out.println("Header Empresa click: TEST KO");
-		}
+	public WebElement getHeader_Empresas() {
+		return cs_Empresas_header;
 	}
+	
 }
