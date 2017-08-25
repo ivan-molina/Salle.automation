@@ -11,6 +11,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,9 +37,10 @@ import Salle.Validations.NuevosAlumnosValidations;
 
 public class SalleHeader {
 	private WebDriver driver = new ChromeDriver();
+//	private WebDriver driver;
 	
 	private NuevosAlumnosValidations na =  new NuevosAlumnosValidations();
-	public HomeReferences hr  = new HomeReferences(driver);
+	private HomeReferences hr  = new HomeReferences(driver);
 	private HomeValidations hv = new HomeValidations(driver);
 	private AlumnosValidations a = new AlumnosValidations();
 	private AlumniValidations ali = new AlumniValidations();
@@ -59,6 +63,7 @@ public class SalleHeader {
 	@BeforeClass
 	public void AntesHeader(){
 		hr.getSalleUrl(driver);
+		driver.manage().window().maximize();
 	}
 	
 	@Test(priority = 1)
