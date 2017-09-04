@@ -31,6 +31,7 @@ import Salle.Validations.AlumniValidations;
 import Salle.Validations.AlumnosValidations;
 import Salle.Validations.HomeValidations;
 import Salle.Validations.NuevosAlumnosValidations;
+import Salle.Validations.UniversidadesValidations;
 
 public class SalleHeader {
 	private WebDriver driver = new ChromeDriver();
@@ -40,6 +41,7 @@ public class SalleHeader {
 	private HomeValidations hv = new HomeValidations(driver);
 	private AlumnosValidations a = new AlumnosValidations();
 	private AlumniValidations ali = new AlumniValidations();
+	private UniversidadesValidations uv = new UniversidadesValidations();
 	private Esenciales esen = new Esenciales();
 	private Screenshot sc = new Screenshot();
 	
@@ -94,6 +96,12 @@ public class SalleHeader {
 	public void Empresas() throws Exception{
 		hv.EntraEmpresa(driver);
 		Assert.assertEquals(1, 2);	
+	}
+	
+	@Test(priority = 5)
+	public void Universidades() throws Exception{
+		hv.EntraUniversidades(driver);
+		uv.EsperaCargaPrincipal(driver);
 	}
 
 }

@@ -67,4 +67,14 @@ public class HomeValidations {
 			System.out.println("Header Empresa click: TEST KO");
 		}
 	}
+	
+	public void EntraUniversidades (WebDriver driver) throws Exception{
+		try{
+			hr.getHeader_Empresas().click();
+			System.out.println("Header Universidades click: TEST OK");
+		}catch(Exception e){
+			System.out.println(e);
+			System.out.println("Header Universidades click: TEST KO");
+		}
+	}
 }

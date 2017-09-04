@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Suite1]" parallel="classes">
-  <test name="Navegacion_Header1(failed)" parallel="classes">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="Salle.TestClasses.prueba">
-        <methods>
-          <include name="tearDown"/>
-          <include name="AntesHeader"/>
-          <include name="Empresas"/>
-          <include name="DespuesHeader"/>
-        </methods>
-      </class> <!-- Salle.TestClasses.prueba -->
       <class name="Salle.TestClasses.SalleHeader">
         <methods>
           <include name="AntesHeader"/>
@@ -20,5 +12,5 @@
         </methods>
       </class> <!-- Salle.TestClasses.SalleHeader -->
     </classes>
-  </test> <!-- Navegacion_Header1(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

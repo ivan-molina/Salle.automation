@@ -34,6 +34,10 @@ public class HomeReferences {
 	@FindBy(css = "#block-menu-features > div > ul > li:nth-child(4) > a")
 	private WebElement cs_Empresas_header;
 	
+	@FindBy(xpath = "//*[@id=\"block-menu-features\"]/div/ul/li[5]/a")
+	private WebElement xpath_principal_header_universidades;
+	
+	
 	//*****************************************************************************
 	//Instanciamos el constructor de la clase junto con el constructor del Factory*
 	//*****************************************************************************
@@ -69,6 +73,10 @@ public class HomeReferences {
 	
 	public WebElement getHeader_Empresas() {
 		return cs_Empresas_header;
+	}
+	
+	public WebElement getHeader_Universidades() {
+		return xpath_principal_header_universidades;
 	}
 	
 }
