@@ -37,6 +37,11 @@ public class HomeReferences {
 	@FindBy(xpath = "//*[@id=\"block-menu-features\"]/div/ul/li[5]/a")
 	private WebElement xpath_principal_header_universidades;
 	
+	@FindBy(xpath = "")
+	private WebElement xpath_principal_header_Escuela;
+	
+	@FindBy(xpath = "")
+	private WebElement xpath_principal_header_prensa;
 	
 	//*****************************************************************************
 	//Instanciamos el constructor de la clase junto con el constructor del Factory*
@@ -54,6 +59,10 @@ public class HomeReferences {
 	public void getSalleUrl(WebDriver driver){
 		driver.get(url);
 	}
+	
+	//*******************************************
+	//Getters del header*
+	//*******************************************
 	
 	public WebElement getHeader_NuevosAlumnos() {
 		return xpath_principal_header_NuevosAlumnos;
@@ -79,4 +88,11 @@ public class HomeReferences {
 		return xpath_principal_header_universidades;
 	}
 	
+	public WebElement getHeader_Escuela() {
+		return xpath_principal_header_Escuela;
+	}
+	
+	public WebElement getHeader_Prensa() {
+		return xpath_principal_header_prensa;
+	}
 }
