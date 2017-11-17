@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" name="Failed suite [Proba SALLE]" parallel="classes">
+  <test name="Navegacion_Header1(failed)" parallel="classes">
     <classes>
       <class name="Salle.TestClasses.SalleHeader">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- Salle.TestClasses.SalleHeader -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Navegacion_Header1(failed) -->
+</suite> <!-- Failed suite [Proba SALLE] -->

@@ -2,61 +2,50 @@
 <testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82651" started-at="2017-09-04T22:04:00Z" finished-at="2017-09-04T22:05:23Z">
+  <suite name="Proba SALLE" duration-ms="24127" started-at="2017-11-17T12:17:04Z" finished-at="2017-11-17T12:17:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82651" started-at="2017-09-04T22:04:00Z" finished-at="2017-09-04T22:05:23Z">
+    <test name="Navegacion_Header1" duration-ms="24127" started-at="2017-11-17T12:17:04Z" finished-at="2017-11-17T12:17:28Z">
       <class name="Salle.TestClasses.SalleHeader">
-        <test-method status="PASS" signature="AntesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="AntesHeader" is-config="true" duration-ms="10525" started-at="2017-09-05T00:04:00Z" finished-at="2017-09-05T00:04:10Z">
+        <test-method status="PASS" signature="AntesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="AntesHeader" is-config="true" duration-ms="9092" started-at="2017-11-17T13:17:04Z" finished-at="2017-11-17T13:17:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AntesHeader -->
-        <test-method status="PASS" signature="NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="NuevosAlumnos" duration-ms="61875" started-at="2017-09-05T00:04:10Z" finished-at="2017-09-05T00:05:12Z">
+        <test-method status="PASS" signature="NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="NuevosAlumnos" duration-ms="4978" started-at="2017-11-17T13:17:13Z" finished-at="2017-11-17T13:17:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NuevosAlumnos -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="4" started-at="2017-09-05T00:05:12Z" finished-at="2017-09-05T00:05:12Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="4" started-at="2017-11-17T13:17:18Z" finished-at="2017-11-17T13:17:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NuevosAlumnos status=SUCCESS method=SalleHeader.NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+                <![CDATA[[TestResult name=NuevosAlumnos status=SUCCESS method=SalleHeader.NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Alumnos" duration-ms="2815" started-at="2017-09-05T00:05:12Z" finished-at="2017-09-05T00:05:15Z">
+        <test-method status="PASS" signature="Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="Alumnos" duration-ms="2530" started-at="2017-11-17T13:17:18Z" finished-at="2017-11-17T13:17:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alumnos -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="4" started-at="2017-09-05T00:05:15Z" finished-at="2017-09-05T00:05:15Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-17T13:17:20Z" finished-at="2017-11-17T13:17:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Alumnos status=SUCCESS method=SalleHeader.Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+                <![CDATA[[TestResult name=Alumnos status=SUCCESS method=SalleHeader.Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Alumni" duration-ms="2402" started-at="2017-09-05T00:05:15Z" finished-at="2017-09-05T00:05:18Z">
+        <test-method status="PASS" signature="Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="Alumni" duration-ms="2354" started-at="2017-11-17T13:17:20Z" finished-at="2017-11-17T13:17:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alumni -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="4" started-at="2017-09-05T00:05:18Z" finished-at="2017-09-05T00:05:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Alumni status=SUCCESS method=SalleHeader.Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Empresas" duration-ms="1338" started-at="2017-09-05T00:05:18Z" finished-at="2017-09-05T00:05:19Z">
+        <test-method status="FAIL" signature="Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="Empresas" duration-ms="1367" started-at="2017-11-17T13:17:23Z" finished-at="2017-11-17T13:17:24Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [2] but found [1]]]>
@@ -68,7 +57,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:370)
 	at org.testng.Assert.assertEquals(Assert.java:380)
-	at Salle.TestClasses.SalleHeader.Empresas(SalleHeader.java:98)
+	at Salle.TestClasses.SalleHeader.Empresas(SalleHeader.java:82)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -79,57 +68,57 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Empresas -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="753" started-at="2017-09-05T00:05:19Z" finished-at="2017-09-05T00:05:20Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-17T13:17:23Z" finished-at="2017-11-17T13:17:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Empresas status=FAILURE method=SalleHeader.Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+                <![CDATA[[TestResult name=Alumni status=SUCCESS method=SalleHeader.Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Universidades()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Universidades" duration-ms="937" started-at="2017-09-05T00:05:20Z" finished-at="2017-09-05T00:05:21Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="798" started-at="2017-11-17T13:17:24Z" finished-at="2017-11-17T13:17:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Empresas status=FAILURE method=SalleHeader.Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Universidades()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="Universidades" duration-ms="1146" started-at="2017-11-17T13:17:25Z" finished-at="2017-11-17T13:17:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Universidades -->
-        <test-method status="PASS" signature="DespuesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="DespuesHeader" is-config="true" duration-ms="1899" started-at="2017-09-05T00:05:21Z" finished-at="2017-09-05T00:05:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DespuesHeader -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-05T00:05:21Z" finished-at="2017-09-05T00:05:21Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-17T13:17:26Z" finished-at="2017-11-17T13:17:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Universidades status=SUCCESS method=SalleHeader.Universidades()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+                <![CDATA[[TestResult name=Universidades status=SUCCESS method=SalleHeader.Universidades()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="DespuesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="DespuesHeader" is-config="true" duration-ms="1738" started-at="2017-11-17T13:17:26Z" finished-at="2017-11-17T13:17:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DespuesHeader -->
       </class> <!-- Salle.TestClasses.SalleHeader -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Navegacion_Header1 -->
+  </suite> <!-- Proba SALLE -->
 </testng-results>
