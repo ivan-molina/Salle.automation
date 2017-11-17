@@ -2,6 +2,7 @@ package Salle.TestClasses;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -20,9 +21,10 @@ import Salle.Validations.UniversidadesValidations;
 
 public class SalleHeader {
 	private WebDriver driver = new ChromeDriver();
+//	private WebDriver driver;
 	
 	private NuevosAlumnosValidations na =  new NuevosAlumnosValidations();
-	public HomeReferences hr  = new HomeReferences(driver);
+	private HomeReferences hr  = new HomeReferences(driver);
 	private HomeValidations hv = new HomeValidations(driver);
 	private AlumnosValidations a = new AlumnosValidations();
 	private AlumniValidations ali = new AlumniValidations();
@@ -45,6 +47,7 @@ public class SalleHeader {
 	@BeforeClass
 	public void AntesHeader(){
 		hr.getSalleUrl(driver);
+		driver.manage().window().maximize();
 	}
 	
 	@Test(priority = 1)

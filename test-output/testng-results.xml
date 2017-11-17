@@ -1,51 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="5" passed="4">
+=======
+<testng-results skipped="0" failed="1" total="4" passed="3">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Proba SALLE" duration-ms="24127" started-at="2017-11-17T12:17:04Z" finished-at="2017-11-17T12:17:28Z">
+=======
+  <suite name="Default suite" duration-ms="15299" started-at="2017-08-25T11:28:01Z" finished-at="2017-08-25T11:28:16Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Navegacion_Header1" duration-ms="24127" started-at="2017-11-17T12:17:04Z" finished-at="2017-11-17T12:17:28Z">
+=======
+    <test name="Default test" duration-ms="15299" started-at="2017-08-25T11:28:01Z" finished-at="2017-08-25T11:28:16Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
       <class name="Salle.TestClasses.SalleHeader">
+<<<<<<< HEAD
         <test-method status="PASS" signature="AntesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="AntesHeader" is-config="true" duration-ms="9092" started-at="2017-11-17T13:17:04Z" finished-at="2017-11-17T13:17:13Z">
+=======
+        <test-method status="PASS" signature="AntesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="AntesHeader" is-config="true" duration-ms="7913" started-at="2017-08-25T13:28:01Z" finished-at="2017-08-25T13:28:09Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AntesHeader -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="NuevosAlumnos" duration-ms="4978" started-at="2017-11-17T13:17:13Z" finished-at="2017-11-17T13:17:18Z">
+=======
+        <test-method status="PASS" signature="NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="NuevosAlumnos" duration-ms="1369" started-at="2017-08-25T13:28:09Z" finished-at="2017-08-25T13:28:10Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NuevosAlumnos -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="4" started-at="2017-11-17T13:17:18Z" finished-at="2017-11-17T13:17:18Z">
+=======
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-08-25T13:28:10Z" finished-at="2017-08-25T13:28:10Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=NuevosAlumnos status=SUCCESS method=SalleHeader.NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=NuevosAlumnos status=SUCCESS method=SalleHeader.NuevosAlumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="Alumnos" duration-ms="2530" started-at="2017-11-17T13:17:18Z" finished-at="2017-11-17T13:17:20Z">
+=======
+        <test-method status="PASS" signature="Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Alumnos" duration-ms="1416" started-at="2017-08-25T13:28:10Z" finished-at="2017-08-25T13:28:12Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alumnos -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-17T13:17:20Z" finished-at="2017-11-17T13:17:20Z">
+=======
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-25T13:28:12Z" finished-at="2017-08-25T13:28:12Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=Alumnos status=SUCCESS method=SalleHeader.Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=Alumnos status=SUCCESS method=SalleHeader.Alumnos()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="Alumni" duration-ms="2354" started-at="2017-11-17T13:17:20Z" finished-at="2017-11-17T13:17:23Z">
+=======
+        <test-method status="PASS" signature="Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Alumni" duration-ms="1315" started-at="2017-08-25T13:28:12Z" finished-at="2017-08-25T13:28:13Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alumni -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="Empresas" duration-ms="1367" started-at="2017-11-17T13:17:23Z" finished-at="2017-11-17T13:17:24Z">
+=======
+        <test-method status="FAIL" signature="Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="Empresas" duration-ms="1986" started-at="2017-08-25T13:28:13Z" finished-at="2017-08-25T13:28:15Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [2] but found [1]]]>
@@ -57,7 +105,11 @@
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:370)
 	at org.testng.Assert.assertEquals(Assert.java:380)
+<<<<<<< HEAD
 	at Salle.TestClasses.SalleHeader.Empresas(SalleHeader.java:82)
+=======
+	at Salle.TestClasses.SalleHeader.Empresas(SalleHeader.java:101)
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,26 +120,52 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<<<<<<< HEAD
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+=======
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Empresas -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-17T13:17:23Z" finished-at="2017-11-17T13:17:23Z">
+=======
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-25T13:28:13Z" finished-at="2017-08-25T13:28:13Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=Alumni status=SUCCESS method=SalleHeader.Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=Alumni status=SUCCESS method=SalleHeader.Alumni()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="tearDown" is-config="true" duration-ms="798" started-at="2017-11-17T13:17:24Z" finished-at="2017-11-17T13:17:25Z">
           <params>
             <param index="0">
@@ -115,10 +193,29 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
         <test-method status="PASS" signature="DespuesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@74e28667]" name="DespuesHeader" is-config="true" duration-ms="1738" started-at="2017-11-17T13:17:26Z" finished-at="2017-11-17T13:17:28Z">
+=======
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="tearDown" is-config="true" duration-ms="511" started-at="2017-08-25T13:28:15Z" finished-at="2017-08-25T13:28:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Empresas status=FAILURE method=SalleHeader.Empresas()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="DespuesHeader()[pri:0, instance:Salle.TestClasses.SalleHeader@58cbafc2]" name="DespuesHeader" is-config="true" duration-ms="770" started-at="2017-08-25T13:28:15Z" finished-at="2017-08-25T13:28:16Z">
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DespuesHeader -->
       </class> <!-- Salle.TestClasses.SalleHeader -->
+<<<<<<< HEAD
     </test> <!-- Navegacion_Header1 -->
   </suite> <!-- Proba SALLE -->
+=======
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'master' of https://github.com/ivan-molina/Salle.automation.git
 </testng-results>
